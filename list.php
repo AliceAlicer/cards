@@ -16,17 +16,16 @@ if($_SESSION['username'] == 'username') {
  echo $row["city"] . " ";
  echo $row["state"] . " ";
  echo $row["country"] . " ";
+ echo "<a href=\"delete.php?id=" . $row["id"] . "\">DELETE</a>";
  print("<br>");
  }
  } else {
  echo "0 results";
  }
+ print("<br><br>");
  print("</html>");
-GIT Exercises 6 (14)
-29.12.2018
  mysqli_close($conn);
 } else {
  print("No access.");
 }
 ?>
-
